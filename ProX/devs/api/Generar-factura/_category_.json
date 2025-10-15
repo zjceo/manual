@@ -1,9 +1,0 @@
-{
-  "label": "Generar Facturas",
-  "position": 5,
-  "link": {
-    "type": "generated-index",
-    "slug": "generar-factura",
-    "description": "Manual de Generar Factura del api ProX"
-  }
-}

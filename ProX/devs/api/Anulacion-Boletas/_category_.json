@@ -1,9 +1,0 @@
-{
-  "label": "Anulacion Boletas",
-  "position": 1,
-  "link": {
-    "type": "generated-index",
-    "slug": "anulacion-boletas",
-    "description": "Manual de Anulacion Boletas del api ProX"
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "label": "Mas Articulos",
-  "position": 3,
-  "link": {
-    "type": "generated-index",
-    "slug": "mas-articulos",
-    "description": "Manuales adicionales de ProX"
-  }
-}

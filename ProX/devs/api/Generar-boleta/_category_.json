@@ -1,9 +1,0 @@
-{
-  "label": "Generar Boleta",
-  "position": 3,
-  "link": {
-    "type": "generated-index",
-    "slug": "generar-boleta",
-    "description": "Manual de Generar Boleta del api ProX"
-  }
-}

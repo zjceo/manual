@@ -1,9 +1,0 @@
-{
-  "label": "Clientes",
-  "position": 12,
-  "link": {
-    "type": "generated-index",
-    "slug": "cliente",
-    "description": "Manual de Clientes del api ProX"
-  }
-}

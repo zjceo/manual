@@ -1,9 +1,0 @@
-{
-  "label": "Anulacion Facturas",
-  "position": 2,
-  "link": {
-    "type": "generated-index",
-    "slug": "anulacion-facturas",
-    "description": "Manual de Anulacion Facturas del api ProX"
-  }
-}
