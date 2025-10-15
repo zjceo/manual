@@ -12,14 +12,14 @@ const config: Config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://Jean-ZR.github.io/',
+  url: 'https://zjceo.github.io/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'jceo-zr',
+  organizationName: 'zjceo',
   projectName: 'manual',
 
   onBrokenLinks: 'throw',
@@ -47,7 +47,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/jceo-zr/manual/tree/main/',
+            'https://github.com/zjceo/manual/tree/main/',
             
         },
         blog: false,
