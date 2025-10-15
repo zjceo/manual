@@ -1,0 +1,9 @@
+{
+  "label": "Productos",
+  "position": 10,
+  "link": {
+    "type": "generated-index",
+    "slug": "productos",
+    "description": "Manual de Productos del api ProX"
+  }
+}

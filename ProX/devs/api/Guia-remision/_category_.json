@@ -1,0 +1,9 @@
+{
+  "label": "Guia de Remision",
+  "position": 8,
+  "link": {
+    "type": "generated-index",
+    "slug": "guia-de-remision",
+    "description": "Manual de Guia de Remision del api ProX"
+  }
+}

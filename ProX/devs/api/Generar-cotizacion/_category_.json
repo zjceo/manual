@@ -1,0 +1,9 @@
+{
+  "label": "Generar Cotizacion",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "slug": "generar-cotizacion",
+    "description": "Manual de Generar Cotizacion del api ProX"
+  }
+}

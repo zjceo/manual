@@ -1,0 +1,9 @@
+{
+  "label": "Link de Pago",
+  "position": 7,
+  "link": {
+    "type": "generated-index",
+    "slug": "link-pago",
+    "description": "Documentación del módulo para la generación de links de pago"
+  }
+}
