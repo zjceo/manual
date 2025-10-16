@@ -109,6 +109,16 @@ const config: Config = {
         docItemComponent: "@theme/ApiItem", // ✅ Agregado para OpenAPI
       }
     ], 
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'mozo',
+        path: 'mozo',
+        routeBasePath: 'mozo',
+        sidebarPath: './mozo.ts',
+        //docItemComponent: "@theme/ApiItem", // ✅ Agregado para OpenAPI
+      }
+    ], 
 
     // Plugin OpenAPI para Facturador
     [
@@ -338,11 +348,12 @@ const config: Config = {
         src: 'img/fastura.svg',
       },
       items: [
-        {to: '/pro6', label: 'Pro 6', position: 'left'},
-        {to: '/proX', label: 'Pro X', position: 'left'},
+        //{to: '/pro6', label: 'Pro 6', position: 'left'},
+        //{to: '/proX', label: 'Pro X', position: 'left'},
         {to: '/pro7', label: 'Pro 7', position: 'left'},
-        {to: '/chatbuho', label: 'Chat Buho', position: 'left'},
-        {to: '/qrbuho', label: 'QR Buho', position: 'left'},
+        //{to: '/chatbuho', label: 'Chat Buho', position: 'left'},
+        //{to: '/qrbuho', label: 'QR Buho', position: 'left'},
+        {to: '/mozo', label: 'Mozo', position: 'left'},
       ],
     },
     docs: {

@@ -1,6 +1,6 @@
 ---
 title: Mozo en cPanel
-sidebar_position: 2
+sidebar_position: 1
 ---
 
 import DocsCard from '/src/components/global/DocsCard';
@@ -57,7 +57,7 @@ Este video te guiará a través de todo el proceso de instalación de manera vis
    - ⚠️ **CRÍTICO:** Desmarcar la casilla de configuración automática
    - 📁 Agregar `/public_html/` al final del campo "nombre de carpeta"
 
-![Interfaz de creación de dominio](../devs/instalacion/img/mozo_crear_nuevo_dominio.png)
+![Interfaz de creación de dominio](img/mozo_crear_nuevo_dominio.png)
 
 ::::warning NOTA CRÍTICA
 Es fundamental desmarcar la casilla y agregar `/public_html/` para que la instalación funcione correctamente.
@@ -79,7 +79,7 @@ Es fundamental desmarcar la casilla y agregar `/public_html/` para que la instal
    - 📦 Seleccionar **"Download source code"**
    - 🗜️ Elegir formato **.zip**
 
-   ![Descarga del código compilado](../devs/instalacion/img/mozo_descargar_codigo_compilado.png)
+   ![Descarga del código compilado](../Pro7/devs/instalacion/img/mozo_descargar_codigo_compilado.png)
 
 4. **Almacenamiento local**
    - 💾 Guardar en carpeta de fácil acceso
@@ -132,30 +132,30 @@ En caso de errores con este método, utilice el **Método 2 - FileZilla** que se
 1. **Acceso a dominios**
    - 🏠 En cPanel → **Dominios**
 
-![Panel de dominios](../devs/instalacion/img/mozo_panel_dominios.png)
+![Panel de dominios](img/mozo_panel_dominios.png)
 
 2. **Acceso al dominio**
    - 📂 Ingresar a la ruta del dominio creado
 
-![Acceso al dominio](../devs/instalacion/img/mozo_acceso_dominio.png)
+![Acceso al dominio](img/mozo_acceso_dominio.png)
 
 3. **Función de carga**
    - ⬆️ Seleccionar **"Cargar"** o **"Upload"**
 
-![Función de carga](../devs/instalacion/img/mozo_funcion_carga.png)
+![Función de carga](img/mozo_funcion_carga.png)
 
 ### 3.2 Carga del Archivo ZIP
 
 1. **Selección del archivo**
    - 📁 Elegir el archivo `.zip` descargado
 
-![Selección de archivo](../devs/instalacion/img/mozo_seleccion_archivo.png)
+![Selección de archivo](img/mozo_seleccion_archivo.png)
 
 2. **Proceso de carga**
    - ⏳ Esperar que la barra indique "Completado"
    - 🔄 Regresar a la carpeta raíz del dominio
 
-![Proceso completado](../devs/instalacion/img/mozo_proceso_completado.png)
+![Proceso completado](img/mozo_proceso_completado.png)
 
 **👉 Si usaste este método, continúa con el [Paso 4: Extracción y Organización](#paso-4-extracción-y-organización)**
 
@@ -186,7 +186,7 @@ FileZilla funciona con una interfaz dividida:
 - **📁 Sección izquierda:** Sus archivos locales (PC/laptop)
 - **🌐 Sección derecha:** Carpetas de su cPanel
 
-![Interfaz de FileZilla](../devs/instalacion/img/mozo_filezilla_interfaz.png)
+![Interfaz de FileZilla](img/mozo_filezilla_interfaz.png)
 
 2. **Localización de la carpeta del dominio**
 
@@ -194,7 +194,7 @@ En su cPanel necesitará buscar la carpeta del dominio que creó:
 - **📍 Recordar:** La creamos con el prefijo `/public_html/`
 - **🎯 Ubicación:** Esto es crucial para localizar correctamente nuestra carpeta de trabajo
 
-![Localización de carpeta](../devs/instalacion/img/mozo_filezilla_localizacion_carpeta.png)
+![Localización de carpeta](img/mozo_filezilla_localizacion_carpeta.png)
 
 ### 3.2 Acceso y Subida
 
@@ -204,7 +204,7 @@ En su cPanel necesitará buscar la carpeta del dominio que creó:
 - **👁️ Visualizar** los dominios disponibles
 - **✅ Seleccionar** el dominio donde instalaremos Mozo Compilado
 
-![Acceso a carpeta de dominio](../devs/instalacion/img/mozo_filezilla_acceso_carpeta_dominio.png)
+![Acceso a carpeta de dominio](img/mozo_filezilla_acceso_carpeta_dominio.png)
 
 2. **Subida de archivos**
 
@@ -217,7 +217,7 @@ En la sección izquierda debe tener su compilado **ya extraído** (en carpeta, n
 - **⬆️ Seleccionar** la opción **"Subir"**
 - **✅ Confirmar** la transferencia
 
-![Subida de archivos](../devs/instalacion/img/mozo_filezilla_subida_archivos.png)
+![Subida de archivos](img/mozo_filezilla_subida_archivos.png)
 
 ::::success PROCESO COMPLETADO
 Con esto habrá terminado la subida de archivos a cPanel usando el método recomendado de FileZilla.
@@ -242,7 +242,7 @@ Si utilizó FileZilla (Método 2), puede omitir este paso ya que los archivos se
    - 🖱️ Clic derecho sobre el archivo
    - 📦 Seleccionar **"Extract"** (Extraer)
 
-![Proceso de extracción](../devs/instalacion/img/mozo_proceso_extraccion.png)
+![Proceso de extracción](img/mozo_proceso_extraccion.png)
 
 ::::info LIMPIEZA
 Ya puedes eliminar el archivo ZIP tras la extracción.
@@ -253,7 +253,7 @@ Ya puedes eliminar el archivo ZIP tras la extracción.
 1. **Acceso a la carpeta compilado**
    - 📁 Ingresar a la carpeta `compilado` creada
 
-![Carpeta compilado](../devs/instalacion/img/mozo_carpeta_compilado.png)
+![Carpeta compilado](img/mozo_carpeta_compilado.png)
 
 2. **Selección de archivos**
    - ☑️ Usar "Seleccionar todo"
@@ -262,12 +262,12 @@ Ya puedes eliminar el archivo ZIP tras la extracción.
 3. **Movimiento a raíz**
    - 🔄 Hacer clic en **"Mover"**
 
-![Mover archivos](../devs/instalacion/img/mozo_mover_archivos.png)
+![Mover archivos](img/mozo_mover_archivos.png)
 
    - 🎯 En el modal: seleccionar carpeta raíz del dominio
    - 🧹 Eliminar prefijo `compilado-main` para dejar solo el nombre del dominio
 
-![Selección de destino](../devs/instalacion/img/mozo_seleccion_destino.png)
+![Selección de destino](img/mozo_seleccion_destino.png)
 
 ::::tip LIMPIEZA
 Elimina la carpeta `compilado` vacía para mantener el orden.
@@ -282,7 +282,7 @@ Elimina la carpeta `compilado` vacía para mantener el orden.
 1. **Creación del archivo**
    - 📄 Crear archivo `.htaccess` en la carpeta raíz
 
-![Crear htaccess](../devs/instalacion/img/mozo_crear_htaccess.png)
+![Crear htaccess](img/mozo_crear_htaccess.png)
 
 **Si el archivo no aparece:**
 
@@ -290,14 +290,14 @@ Elimina la carpeta `compilado` vacía para mantener el orden.
 **Solución:** Ir al botón **"Configuración"** (esquina superior derecha) y activar **"Mostrar archivos ocultos"**
 ::::
 
-![Configuración de archivos ocultos](../devs/instalacion/img/mozo_configuracion_archivos_ocultos.png)
+![Configuración de archivos ocultos](img/mozo_configuracion_archivos_ocultos.png)
 
-![Mostrar archivos ocultos](../devs/instalacion/img/mozo_mostrar_archivos_ocultos.png)
+![Mostrar archivos ocultos](img/mozo_mostrar_archivos_ocultos.png)
 
 2. **Contenido del archivo**
    - ✏️ Editar el archivo y agregar:
 
-![Editar htaccess](../devs/instalacion/img/mozo_editar_htaccess.png)
+![Editar htaccess](img/mozo_editar_htaccess.png)
 
 ```apache
 # Archivo necesario para funcionamiento SPA en Apache
@@ -321,12 +321,12 @@ Elimina la carpeta `compilado` vacía para mantener el orden.
 1. **Localización del archivo**
    - 🔍 Buscar y abrir `config.json` en la raíz
 
-![Localizar config.json](../devs/instalacion/img/mozo_localizar_config_json.png)
+![Localizar config.json](img/mozo_localizar_config_json.png)
 
 2. **Verificación de rutas**
    - ✅ Verificar que la ruta principal esté configurada según su dominio
 
-![Configurar config.json](../devs/instalacion/img/mozo_configurar_config_json.png)
+![Configurar config.json](img/mozo_configurar_config_json.png)
 
 ::::danger CRÍTICO - apiUrl
 El `apiUrl` debe apuntar al sistema del cliente final. El cliente debe existir primero antes de configurar Mozo.
@@ -361,7 +361,7 @@ El `apiUrl` debe apuntar al sistema del cliente final. El cliente debe existir p
 
 Una vez completada la instalación exitosamente:
 
-```
+```bash
 {su_dominio}/auth/login
 ```
 

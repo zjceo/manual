@@ -30,6 +30,7 @@
     "docusaurus-lunr-search": "^3.6.0",
     "docusaurus-plugin-openapi-docs": "^4.3.7",
     "docusaurus-theme-openapi-docs": "^4.3.7",
+    "lucide-react": "^0.545.0",
     "micromark-extension-mdx-expression": "^3.0.0",
     "plugin-image-zoom": "https://github.com/flexanalytics/plugin-image-zoom.git",
     "prism-react-renderer": "^2.3.0",

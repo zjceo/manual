@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 
-# 📋 Módulo Mesas
+# Módulo Mesas
 
 El **Módulo Mesa** permite a los mozos gestionar de manera eficiente las mesas del restaurante, asignar pedidos y coordinar con la cocina para la preparación de los platillos. Los mozos pueden seleccionar una mesa, tomar el pedido de los clientes y luego enviarlo a la cocina mediante una **comanda**, que puede imprimirse para facilitar el trabajo del equipo de cocina.
 

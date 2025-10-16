@@ -1,6 +1,7 @@
 ---
 title: Introducción
 sidebar_position: 0
+slug: /
 ---
 
 import DocsCard from '/src/components/global/DocsCard';

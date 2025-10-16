@@ -1,7 +1,7 @@
 ---
 title: Mozo.pe vs Mozo Compilado
 description: "Comparación detallada entre las dos versiones del sistema Mozo: la versión web Mozo.pe y la versión compilada para instalación local."
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 import DocsCard from '/src/components/global/DocsCard';
