@@ -2,21 +2,40 @@ import React from 'react';
 import { useLocation } from '@docusaurus/router';
 
 const products = [
-  { id: 'pro6', label: 'Pro 6', path: '/pro6', icon: '🏢' },
-  { id: 'prox', label: 'Pro X', path: '/proX', icon: '⚡' },
-  { id: 'pro7', label: 'Pro 7', path: '/pro7', icon: '🚀' },
-  { id: 'chatbuho', label: 'ChatBuho', path: '/chatbuho', icon: '💬' },
-  { id: 'qrbuho', label: 'QrBuho', path: '/qrbuho', icon: '📱' },
+  { id: 'pro6', label: 'Pro 6', path: './', icon: '🏢' },
+  { id: 'prox', label: 'Pro X', path: './proX', icon: '⚡' },
+  { id: 'pro7', label: 'Pro 7', path: './pro7', icon: '🚀' },
+  { id: 'chatbuho', label: 'ChatBuho', path: './chatbuho', icon: '💬' },
+  { id: 'qrbuho', label: 'QrBuho', path: './qrbuho', icon: '📱' },
+  { id: 'mozo', label: 'Mozo', path: './mozo', icon: '🍔' },
 ];
+
+// Función para obtener el label a mostrar
+const getDisplayLabel = (productId) => {
+  if (productId === 'pro6') {
+    return 'docs';
+  }
+  return products.find(p => p.id === productId)?.label || 'Pro 6';
+};
 
 function ProductSelector() {
   const location = useLocation();
   
   React.useEffect(() => {
     // Detectar el producto actual
-    const currentProduct = products.find(p => 
-      location.pathname.toLowerCase().startsWith(p.path.toLowerCase())
-    ) || products[1];
+    // Si estamos en / o en /pro6, es Pro6
+    let currentProduct = products[0]; // Pro6 por defecto
+    
+    if (location.pathname.toLowerCase() === '/manual/' || 
+        location.pathname.toLowerCase().startsWith('/manual/pro')) {
+      const found = products.find(p => 
+        location.pathname.toLowerCase().startsWith('/manual' + p.path.toLowerCase())
+      );
+      if (found) currentProduct = found;
+    }
+
+    // Obtener el label a mostrar (Pro6 → docs)
+    const displayLabel = getDisplayLabel(currentProduct.id);
 
     // Buscar el navbar
     const navbar = document.querySelector('.navbar__items--right');
@@ -41,9 +60,9 @@ function ProductSelector() {
         iconSpan.className = 'custom-dropdown-icon';
         iconSpan.textContent = currentProduct.icon;
         
-        // Nombre del producto actual
+        // Nombre del producto actual (con transformación)
         const labelSpan = document.createElement('span');
-        labelSpan.textContent = currentProduct.label;
+        labelSpan.textContent = displayLabel;
         
         // Flecha
         const arrowSpan = document.createElement('span');
@@ -72,7 +91,8 @@ function ProductSelector() {
           itemIcon.textContent = product.icon;
           
           const itemLabel = document.createElement('span');
-          itemLabel.textContent = product.label;
+          // Aquí también aplicar la transformación
+          itemLabel.textContent = getDisplayLabel(product.id);
           
           item.appendChild(itemIcon);
           item.appendChild(itemLabel);
@@ -118,7 +138,7 @@ function ProductSelector() {
         const labelSpan = container.querySelector('.custom-dropdown-button > span:nth-child(2)');
         if (iconSpan && labelSpan) {
           iconSpan.textContent = currentProduct.icon;
-          labelSpan.textContent = currentProduct.label;
+          labelSpan.textContent = displayLabel;
         }
         
         // Actualizar item activo en el menú

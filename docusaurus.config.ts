@@ -40,7 +40,7 @@ const config: Config = {
       {
         docs: {
           //sidebarPath: './sidebars.ts',
-          routeBasePath: '/',
+          routeBasePath: '/pro6-old',  // ← Cambio: mueve los docs clásicos a /pro6-old
           docItemComponent: "@theme/ApiItem", // Derived from docusaurus-theme-openapi
           showLastUpdateTime: true,
           showLastUpdateAuthor: true,
@@ -65,20 +65,20 @@ const config: Config = {
     [
       '@docusaurus/plugin-content-docs',
       {
-        id: 'proX',
-        path: 'ProX',
-        routeBasePath: 'proX',
-        sidebarPath: './prox.ts',
-        docItemComponent: "@theme/ApiItem", // ✅ Agregado para OpenAPI
+        id: 'pro6',
+        path: 'Pro6',
+        routeBasePath: '/',  // ← Cambio: Pro6 es ahora la ruta principal
+        sidebarPath: './pro6.ts',
       }
     ],
     [
       '@docusaurus/plugin-content-docs',
       {
-        id: 'pro6',
-        path: 'Pro6',
-        routeBasePath: 'pro6',
-        sidebarPath: './pro6.ts',
+        id: 'proX',
+        path: 'ProX',
+        routeBasePath: 'proX',
+        sidebarPath: './prox.ts',
+        docItemComponent: "@theme/ApiItem", // ✅ Agregado para OpenAPI
       }
     ],
     [
@@ -350,10 +350,10 @@ const config: Config = {
       items: [
         //{to: '/pro6', label: 'Pro 6', position: 'left'},
         //{to: '/proX', label: 'Pro X', position: 'left'},
-        {to: '/pro7', label: 'Pro 7', position: 'left'},
+        //{to: '/pro7', label: 'Pro 7', position: 'left'},
         //{to: '/chatbuho', label: 'Chat Buho', position: 'left'},
         //{to: '/qrbuho', label: 'QR Buho', position: 'left'},
-        {to: '/mozo', label: 'Mozo', position: 'left'},
+        //{to: '/mozo', label: 'Mozo', position: 'left'},
       ],
     },
     docs: {
